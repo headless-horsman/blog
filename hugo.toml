@@ -1,0 +1,57 @@
+baseURL = 'https://headless-horsman.com/'
+languageCode = 'en-us'
+title = 'The Headless Horsman'
+
+theme = "terminal"
+pagination.pagerSize = 5
+
+sectionPagesMenu = "main"
+
+[markup.highlight]
+    noClasses = false
+
+# Allow use of raw HTML, I'll try to behave myself
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  showMenuItems = 2
+
+  # I'm only planning on making posts in English, for now
+  showLanguageSelector = false
+  fullWidthTheme = false
+  centerTheme = true
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
+
+  # set post to show the last updated
+  showLastUpdated = true
+  enableGitInfo = true
+
+  # whether to show a page's estimated reading time
+  readingTime = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "The Headless Horsman"
+
+    [languages.en.params]
+      subtitle = "Like the scrawlings of a madman, but with more code"
+      owner = "Nicholas Horsman"
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      newerPosts = "Newer posts"
+      olderPosts = "Older posts"
+      missingContentMessage = "Page not found..."
+      missingBackButtonLabel = "Back to home page"
+      minuteReadingTime = "min read"
+      words = "words"
+
+      [languages.en.params.logo]
+        logoText = "Headless Horsman"
+        logoHomeLink = "/"

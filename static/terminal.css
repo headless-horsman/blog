@@ -1,0 +1,10 @@
+:root {
+  --background: #00061f;
+  --foreground: #e5feff;
+  --accent: #ff9a60;
+}
+
+/* Make figure captions a little easier to read */
+figure figcaption {
+  font-weight: bold;
+}
